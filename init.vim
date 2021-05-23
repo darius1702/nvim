@@ -1,63 +1,37 @@
 let mapleader = "\<space>"
 
-source /home/darius/.config/nvim/config/plug.vim
-" source /home/darius/.config/nvim/config/telescope.vim
-source /home/darius/.config/nvim/config/treesitter.vim
+source /Users/darius/.config/nvim/config/plug.vim
+source /Users/darius/.config/nvim/config/telescope.vim
+source /Users/darius/.config/nvim/config/treesitter.vim
+source /Users/darius/.config/nvim/config/set.vim
+source /Users/darius/.config/nvim/config/lightline.vim
 
-set termguicolors
-let g:gruvbox_material_background = "hard"
+" italics are cringe
 let g:gruvbox_material_disable_italic_comment = 1
+let g:gruvbox_italics = 0
 
-set bg=dark
-colorscheme nord
-set scrolloff=3
-set matchpairs+=<:>
-set signcolumn=auto
+colorscheme gruvbox8 " gruvbox8 or gruvbox-material
 
-set clipboard+=unnamedplus
-
-if !has('gui_running')
-	set t_Co=256
-endif
-
-set noshowmode
-set laststatus=1
-set noruler
-set noshowcmd
-set cmdheight=1
-
-set langmenu=en_US
-let $LANG = 'en_US'
-set expandtab
-set shiftwidth=2
-set softtabstop=2
-set autoindent
-set smartindent
-set hidden
-set nobackup
-set nowritebackup
-set updatetime=50
-set go=a
-set mouse=a
-set nohlsearch
-set smartcase
-set nocompatible
 au BufEnter * set fo-=c fo-=r fo-=o
 filetype plugin on
 syntax on
-set encoding=utf-8
-set number relativenumber
-set splitbelow splitright
 
-set undofile
-set undodir=$HOME/.config/nvim/undo
-set undolevels=1000
-set undoreload=10000
+" let g:netrw_banner = 0
+let g:netrw_altw = 1
+let g:netrw_liststyle = 3
 
+" Shortcutting split navigation, saving a keypress:
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+" Automatically deletes all trailing whitespace on save.
 autocmd BufWritePre * %s/\s\+$//e
 
+" no background etc
 hi! Normal ctermbg=NONE guibg=NONE
-hi! NonText ctermbg=NONE guibg=NONE
-hi! link LineNr guibg
+hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
+"hi! link LineNr guibg
 hi! link SignColumn LineNr
 hi! EndOfBuffer ctermbg=NONE guibg=NONE
