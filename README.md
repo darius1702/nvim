@@ -1,4 +1,3 @@
-# init.vim
+# Awesome neovim config
 
-much pog
-requires neovim 0.5.0+ for lua stuff (lsp / telescope / treesitter)
+requires neovim 0.5.0+ for lua stuff
