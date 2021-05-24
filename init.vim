@@ -1,38 +1,39 @@
+"     _         _  __           _
+"    (_)____   (_)/ /_  _   __ (_)____ ___
+"   / // __ \ / // __/ | | / // // __ `__ \
+"  / // / / // // /_ _ | |/ // // / / / / /
+" /_//_/ /_//_/ \__/(_)|___//_//_/ /_/ /_/
+
 let mapleader = "\<space>"
 
-source $HOME/.config/nvim/plugins/plug.vim
+" Config files
+source $HOME/.config/nvim/configuration/mappings.vim
+source $HOME/.config/nvim/configuration/set.vim
+
+" Plugin manager
+source $HOME/.config/nvim/configuration/plug.vim
+
+" Plugin config files
+source $HOME/.config/nvim/plugins/airline.vim
 source $HOME/.config/nvim/plugins/telescope.vim
 source $HOME/.config/nvim/plugins/treesitter.vim
-source $HOME/.config/nvim/plugins/set.vim
-source $HOME/.config/nvim/plugins/airline.vim
 
 " Italics are cringe
 let g:gruvbox_material_disable_italic_comment = 1
 let g:gruvbox_italics = 0
 
+" Colorscheme
 colorscheme gruvbox8 " gruvbox8 or gruvbox-material
 
-" fugitive git status and commit
-nnoremap <silent> <leader>gs :G<CR>
-nnoremap <silent> <leader>cc :G commit<CR>
+" Netrw configuration
+let g:netrw_altw = 1
+let g:netrw_liststyle = 3
+let g:netrw_banner = 0
 
-" Tab for next buffer and shift+tab for previous buffer
-nnoremap <silent> <TAB> :bnext<CR>
-nnoremap <silent> <S-TAB> :bprevious<CR>
-
+" Miscellaneous
 au BufEnter * set fo-=c fo-=r fo-=o
 filetype plugin on
 syntax on
-
-" let g:netrw_banner = 0
-let g:netrw_altw = 1
-let g:netrw_liststyle = 3
-
-" Shortcutting split navigation, saving a keypress
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
 
 " Automatically deletes all trailing whitespace on save
 autocmd BufWritePre * %s/\s\+$//e
