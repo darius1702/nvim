@@ -17,8 +17,8 @@ nnoremap <silent> <leader>gs :G<CR>
 nnoremap <silent> <leader>cc :G commit<CR>
 
 " Tab for next buffer and shift+tab for previous buffer
-nnoremap <TAB> :bnext<CR>
-nnoremap <S-TAB> :bprevious<CR>
+nnoremap <silent> <TAB> :bnext<CR>
+nnoremap <silent> <S-TAB> :bprevious<CR>
 
 au BufEnter * set fo-=c fo-=r fo-=o
 filetype plugin on
