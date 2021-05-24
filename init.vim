@@ -1,10 +1,10 @@
 let mapleader = "\<space>"
 
-source /Users/darius/.config/nvim/config/plug.vim
-source /Users/darius/.config/nvim/config/telescope.vim
-source /Users/darius/.config/nvim/config/treesitter.vim
-source /Users/darius/.config/nvim/config/set.vim
-source /Users/darius/.config/nvim/config/lightline.vim
+source $HOME/.config/nvim/plugins/plug.vim
+source $HOME/.config/nvim/plugins/telescope.vim
+source $HOME/.config/nvim/plugins/treesitter.vim
+source $HOME/.config/nvim/plugins/set.vim
+source $HOME/.config/nvim/plugins/lightline.vim
 
 " italics are cringe
 let g:gruvbox_material_disable_italic_comment = 1
