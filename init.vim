@@ -12,7 +12,13 @@ let g:gruvbox_italics = 0
 
 colorscheme gruvbox8 " gruvbox8 or gruvbox-material
 
+" fugitive git status
 nnoremap <leader>gs :G<CR>
+
+" Tab for next buffer and shift+tab for previous buffer
+nnoremap <TAB> :bnext<CR>
+nnoremap <S-TAB> :bprevious<CR>
+
 au BufEnter * set fo-=c fo-=r fo-=o
 filetype plugin on
 syntax on
