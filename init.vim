@@ -12,8 +12,9 @@ let g:gruvbox_italics = 0
 
 colorscheme gruvbox8 " gruvbox8 or gruvbox-material
 
-" fugitive git status
-nnoremap <leader>gs :G<CR>
+" fugitive git status and commit
+nnoremap <silent> <leader>gs :G<CR>
+nnoremap <silent> <leader>cc :G commit<CR>
 
 " Tab for next buffer and shift+tab for previous buffer
 nnoremap <TAB> :bnext<CR>
