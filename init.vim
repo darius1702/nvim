@@ -12,6 +12,7 @@ let g:gruvbox_italics = 0
 
 colorscheme gruvbox8 " gruvbox8 or gruvbox-material
 
+nnoremap <leader>gs :G<CR>
 au BufEnter * set fo-=c fo-=r fo-=o
 filetype plugin on
 syntax on
