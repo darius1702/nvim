@@ -11,4 +11,4 @@ let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 
 " Theme, see :AirlineTheme
-let g:airline_theme = 'gruvbox_material'
+let g:airline_theme = 'gruvbox8'
