@@ -12,6 +12,7 @@ endif
 
 set noshowmode
 set laststatus=2 " 1 for no statusline
+set showtabline=2
 set noruler
 set noshowcmd
 set cmdheight=1
