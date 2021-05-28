@@ -15,4 +15,4 @@ let g:airline#extensions#tabline#buffers_label = ''
 let g:airline_powerline_fonts = 1
 
 " Theme, see :AirlineTheme
-let g:airline_theme = 'gruvbox8'
+let g:airline_theme = 'onedark'

@@ -21,9 +21,10 @@ source $HOME/.config/nvim/plugins/treesitter.vim
 " Italics are cringe
 let g:gruvbox_material_disable_italic_comment = 1
 let g:gruvbox_italics = 0
+let g:onedark_hide_endofbuffer = 1
 
 " Colorscheme
-colorscheme gruvbox8 " gruvbox8 or gruvbox-material
+colorscheme onedark " gruvbox8, gruvbox-material, onedark
 
 " Netrw configuration
 let g:netrw_altw = 1
@@ -39,8 +40,8 @@ syntax on
 autocmd BufWritePre * %s/\s\+$//e
 
 " No background etc
-hi! Normal ctermbg=NONE guibg=NONE
-hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
+"hi! Normal ctermbg=NONE guibg=NONE
+"hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
 "hi! link LineNr guibg
-hi! link SignColumn LineNr
-hi! EndOfBuffer ctermbg=NONE guibg=NONE
+"hi! link SignColumn LineNr
+"hi! EndOfBuffer ctermbg=NONE guibg=NONE
