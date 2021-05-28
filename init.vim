@@ -16,6 +16,8 @@ source $HOME/.config/nvim/configuration/plug.vim
 " Plugin config files
 source $HOME/.config/nvim/plugins/airline.vim
 source $HOME/.config/nvim/plugins/telescope.vim
+
+"Hide end of buffer tilde
 source $HOME/.config/nvim/plugins/treesitter.vim
 
 " Italics are cringe
