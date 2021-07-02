@@ -26,5 +26,6 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Airline
 Plug 'vim-airline/vim-airline'
-
+" Other
+Plug 'Pocco81/TrueZen.nvim'
 call plug#end()
