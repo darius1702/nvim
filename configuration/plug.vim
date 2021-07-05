@@ -13,6 +13,7 @@ Plug 'joshdick/onedark.vim'         " onedark
 Plug 'lervag/vimtex'
 " Syntax
 Plug 'jiangmiao/auto-pairs'
+Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 " Git
 Plug 'airblade/vim-gitgutter'
