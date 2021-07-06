@@ -26,3 +26,5 @@ nnoremap <leader>/ <cmd>lua require('telescope.builtin').current_buffer_fuzzy_fi
 " TeX
 autocmd FileType tex inoremap <buffer> \\bi \begin{itemize}<CR>\end{itemize}<ESC>O\item
 autocmd FileType tex inoremap <buffer> \\bf \begin{frame}<CR>\end{frame}<ESC>kf}a{}<ESC>ha
+autocmd FileType tex set spell
+autocmd FileType tex set spelllang=de_de,en_us
