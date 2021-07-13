@@ -14,7 +14,7 @@ source $HOME/.config/nvim/configuration/set.vim
 source $HOME/.config/nvim/configuration/plug.vim
 
 " Plugin config files
-source $HOME/.config/nvim/plugins/airline.vim
+source $HOME/.config/nvim/plugins/line.lua
 source $HOME/.config/nvim/plugins/telescope.vim
 source $HOME/.config/nvim/plugins/treesitter.vim
 

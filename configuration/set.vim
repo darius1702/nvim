@@ -1,4 +1,6 @@
-let $LANG = 'en_US'
+autocmd FileType tex set spell
+set spelllang=de_de,en_us
+
 set termguicolors
 set bg=dark
 set scrolloff=3
@@ -12,8 +14,8 @@ endif
 
 set noshowmode
 set laststatus=2 " 1 for no statusline
-set showtabline=2
-set noruler
+" set showtabline=2 " 1 for only when more than 1 tab is open
+" set noruler
 set noshowcmd
 set cmdheight=1
 

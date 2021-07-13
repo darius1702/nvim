@@ -13,7 +13,7 @@ Plug 'joshdick/onedark.vim'         " onedark
 Plug 'lervag/vimtex'
 " Syntax
 Plug 'jiangmiao/auto-pairs'
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-commentary'
 " Git
 Plug 'airblade/vim-gitgutter'
@@ -24,6 +24,6 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-" Airline
-Plug 'vim-airline/vim-airline'
+" Lualine
+Plug 'hoob3rt/lualine.nvim'
 call plug#end()
